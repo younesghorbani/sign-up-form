@@ -27,3 +27,21 @@ img {
     background-image: url(images/ferns.jpg);
     background-size: cover;
 }
+
+.image-side .logo {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    margin-top: 9.375rem;
+    padding: .625rem 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    margin-right: .625rem;
+}
