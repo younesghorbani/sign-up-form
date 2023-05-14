@@ -12,9 +12,33 @@ body {
     font-size: 16px;
 }
 
+a {
+    color: #596d48;
+    text-decoration: none;
+}
+
 img {
     width: 100%;
     height: auto;
+}
+
+label {
+    font-size: .5625rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+}
+
+button {
+    font-family: inherit;
+    font-size: .8125rem;
+    font-weight: bold;
+    background-color: #596d48;
+    color: #fff;
+    padding: .625rem 2.1875rem;
+    border: none;
+    border-radius: .3125rem;
+    cursor: pointer;
 }
 
 .container {
@@ -26,6 +50,7 @@ img {
     width: 30%;
     background-image: url(images/ferns.jpg);
     background-size: cover;
+    padding-top: 11.5625rem;
 }
 
 .image-side .logo {
@@ -33,7 +58,6 @@ img {
     font-size: 3rem;
     background-color: rgba(0, 0, 0, .4);
     color: #fff;
-    margin-top: 9.375rem;
     padding: .625rem 0;
     text-transform: uppercase;
     display: flex;
@@ -42,6 +66,64 @@ img {
 }
 
 .logo img {
-    width: 100px;
+    width: 5rem;
     margin-right: .625rem;
+}
+
+.form-side {
+    width: 70%;
+    background-color: #f8f8f8;
+}
+
+.form-side > div {
+    font-weight: bold;
+    padding: 8.75rem 0 2.5rem 1.875rem;
+}
+
+.form-side > div p:first-child {
+    margin-bottom: 1.25rem;
+    max-width: 55%;
+    line-height: 1.3;
+}
+
+.form-side form {
+    background-color: #fff;
+    padding-top: .9375rem;
+}
+
+.form-side form > p {
+    font-size: 1.125rem;
+    margin: 0 0 .9375rem;
+    padding-left: 1.875rem;
+}
+.form-side form > div + div {
+    background-color: #f8f8f8;
+    padding: 1.5625rem 0 0 1.875rem;
+    box-shadow: 0 20px 10px -20px rgba(0, 0, 0, .30) inset;
+}
+
+.form-side form > div + div p {
+    font-size: .8125rem;
+    font-weight: bold;
+    margin-top: 1.875rem;
+}
+
+.form-inputs {
+    background-color: #fff;
+    padding: 0 0 1.875rem 1.875rem;
+    display: grid;
+    grid-template-columns: repeat(2, 12.5rem);
+    column-gap: 3.125rem;
+    row-gap: .625rem;
+}
+
+.form-inputs input {
+    font-family: inherit;
+    font-size: .75rem;
+    font-weight: bold;
+    width: 100%;
+    height: 1.75rem;
+    padding: .625rem .5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: .1875rem;
 }
