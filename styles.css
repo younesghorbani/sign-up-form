@@ -116,7 +116,7 @@ button:hover {
 
 .form-inputs {
     background-color: #fff;
-    padding: 0 0 1.875rem 1.875rem;
+    padding: 0 0 .625rem 1.875rem;
     display: grid;
     grid-template-columns: repeat(2, 12.5rem);
     column-gap: 3.125rem;
@@ -137,13 +137,16 @@ button:hover {
 
 .form-inputs input:focus {
     outline: none;
-}
-
-.form-inputs input:not([type="password"]):focus {
     border: 2px solid #6495ed;
     box-shadow: 2.4px 2.4px 3.2px rgba(0, 0, 0, .15);
 }
 
-.form-inputs input[type="password"]:invalid {
-    border: 2px solid #d93025;
+.form-inputs input.error {
+    border-color: #dc3545;
+    box-shadow: none;
+}
+
+.message {
+    display: inline-block;
+    font-size: .625rem;
 }
