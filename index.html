@@ -24,44 +24,49 @@
                 </p>
                 <p>You <em>know</em> you want to.</p>
             </div>
-            <form action="">
+            <form action="" method="post">
                 <p>Let's do this!</p>
                 <div class="form-inputs">
                     <div>
                         <div>
                             <label for="first-name">First Name</label>
                         </div>
-                        <input type="text" name="first-name" id="first-name">
+                        <input type="text" name="first-name" id="first-name" required>
                     </div>
                     <div>
                         <div>
                             <label for="first-name">Last Name</label>
                         </div>
-                        <input type="text" name="last-name" id="last-name">
+                        <input type="text" name="last-name" id="last-name" required>
                     </div>
                     <div>
                         <div>
                             <label for="email">Email</label>
                         </div>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div>
                         <div>
                             <label for="tel">Phone Number</label>
                         </div>
-                        <input type="tel" name="tel" id="tel">
+                        <input type="tel" name="tel" id="tel" required>
                     </div>
                     <div>
                         <div>
                             <label for="password">Password</label>
                         </div>
-                        <input type="password" name="password" id="password" required>
+                        <input type="password" 
+                               name="password" 
+                               id="password" required>
+                        <small class="message"></small>
                     </div>
                     <div>
                         <div>
                             <label for="confirm-password">Confirm Password</label>
                         </div>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
+                        <input type="password" 
+                               name="confirm-password" 
+                               id="confirm-password" required>
                     </div>
                 </div>
                 <div>
@@ -71,5 +76,7 @@
             </form>
         </section>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
